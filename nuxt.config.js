@@ -42,6 +42,8 @@ module.exports = {
     ssr: true
   }, {
     src: "@/plugins/router"
+  }, {
+    src: "@/plugins/axios"
   }],
   /*
    ** Nuxt.js dev-modules
@@ -50,7 +52,13 @@ module.exports = {
   /*
    ** Nuxt.js modules
    */
-  modules: [],
+  modules: ["@nuxtjs/axios"],
+  axios: {
+    proxy: true
+  },
+  proxy: {
+    "/api/": "http://localhost:3001/"
+  },
   /*
    ** Build configuration
    */

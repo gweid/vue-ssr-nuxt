@@ -7,6 +7,7 @@
       <nuxt-link to="user">用户列表</nuxt-link>
       <nuxt-link :to="{name: 'detail-id', params: {id: 1}}">详情页</nuxt-link>
       <nuxt-link :to="{name: 'detail-detailList', query: {id: 1}}">详情列表</nuxt-link>
+      <nuxt-link :to="{name: 'testVuex'}">测试 vuex</nuxt-link>
     </div>
   </div>
 </template>

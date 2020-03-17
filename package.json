@@ -11,9 +11,11 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
+    "@nuxtjs/axios": "^5.9.5",
     "babel-plugin-import": "^1.13.0",
     "cross-env": "^5.2.0",
     "koa": "^2.6.2",
+    "koa-router": "^8.0.8",
     "less": "^3.11.1",
     "less-loader": "^5.0.0",
     "nuxt": "^2.0.0",
